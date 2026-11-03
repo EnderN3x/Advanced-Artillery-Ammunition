@@ -1,0 +1,9 @@
+{
+  "name": "advanced-artillery-ammunition",
+  "version": "0.1.0",
+  "title": "Advanced Artillery Ammunition",
+  "author": "EnderN3x",
+  "description": "Introduces new and unique ammunition for artillery.",
+  "factorio_version": "2.1",
+  "dependencies": ["base >= 2.1.0"]
+}

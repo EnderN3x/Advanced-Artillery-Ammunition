@@ -1,0 +1,1 @@
+-- Define ammunition prototypes in this file.
