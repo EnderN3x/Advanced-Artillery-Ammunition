@@ -21,6 +21,10 @@ script.on_event(defines.events.on_script_trigger_effect, function(event)
   end
 
   local surface = game.get_surface(event.surface_index)
+  if not surface then
+    return
+  end
+
   if event.effect_id == he_cluster_shell_impact then
     for _ = 1, he_cluster_count do
       -- sqrt gives a uniform spread over the disc
@@ -39,7 +43,7 @@ script.on_event(defines.events.on_script_trigger_effect, function(event)
       })
       for _, victim in pairs(victims) do
         if victim.valid and victim.destructible then
-          victim.damage(he_cluster_damage, game.forces.player, "explosion")
+          victim.damage(he_cluster_damage, game.forces["player"], "explosion")
         end
       end
     end

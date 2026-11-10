@@ -1,4 +1,5 @@
 -- Advanced artillery shell
+--#region
 local advanced_artillery_shell = {
   type = "ammo",
   name = "advanced-artillery-shell",
@@ -43,9 +44,11 @@ data:extend({
   advanced_artillery_shell,
   advanced_artillery_shell_recipe
 })
+--#endregion
 -- End of advanced artillery shell
 
 -- Decoy shell
+--#region
 local decoy_shell = {
   type = "ammo",
   name = "decoy-shell",
@@ -120,6 +123,7 @@ data:extend({
 -- End of decoy shell
 
 -- AB airburst shell
+--#region
 local ab_airburst_shell = {
   type = "ammo",
   name = "ab-airburst-shell",
@@ -193,6 +197,7 @@ data:extend({
 -- End of AB airburst shell
 
 -- HE cluster shell
+--#region
 local he_cluster_shell = {
   type = "ammo",
   name = "he-cluster-shell",
@@ -263,4 +268,5 @@ data:extend({
   he_cluster_shell_recipe,
   he_cluster_shell_projectile
 })
+--#endregion
 -- End of HE cluster shell
